@@ -1,0 +1,173 @@
+/* CSS */
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Preloader */
+@charset "utf-8";
+body {
+	overflow: hidden;
+}
+
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url(../images/status.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+/*Vegas CSS for Slideshow*/
+
+.vegas-background {
+    max-width: none !important; /* counteracts global img modification by twitter bootstrap library */
+	z-index: -2;
+}
+
+.vegas-background {
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+
+/* Navbar */
+#nav {
+margin-bottom:-20px;
+}
+.navbar {
+border-radius:0px !important;
+}
+.navbar-new {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.navbar-new .navbar-brand {
+  color: #f1f1f1;
+}
+}
+.navbar-new .navbar-text {
+  color: #f1f1f1;
+}
+.navbar-new .navbar-nav > li > a {
+  color: #f1f1f1;
+}
+.navbar-new .navbar-nav > li > a:hover,
+.navbar-new .navbar-nav > li > a:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar-new .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-new .navbar-toggle:hover,
+.navbar-new .navbar-toggle:focus {
+  background-color: #000000;
+}
+.navbar-new .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-new .navbar-collapse,
+.navbar-new .navbar-form {
+  border-color: #e6e6e6;
+}
+.navbar-new .navbar-nav > .dropdown > a:hover .caret,
+.navbar-new .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #333333;
+  border-bottom-color: #333333;
+}
+.navbar-new .navbar-nav > .open > a,
+.navbar-new .navbar-nav > .open > a:hover,
+.navbar-new .navbar-nav > .open > a:focus {
+  background-color: #e7e7e7;
+  color: #555555;
+}
+.navbar-new .navbar-nav > .open > a .caret,
+.navbar-new .navbar-nav > .open > a:hover .caret,
+.navbar-new .navbar-nav > .open > a:focus .caret {
+  border-top-color: #555555;
+  border-bottom-color: #555555;
+}
+.navbar-new .navbar-nav > .dropdown > a .caret {
+  border-top-color: #777777;
+  border-bottom-color: #777777;
+}
+
+@media (max-width: 767px) {
+  .navbar-new .navbar-nav .open .dropdown-menu > li > a {
+    color: #777777;
+  }
+  .navbar-new .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-new .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333333;
+    background-color: transparent;
+  }
+  .navbar-new .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-new .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-new .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555555;
+    background-color: #e7e7e7;
+  }
+  .navbar-new .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-new .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-new .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-new .navbar-link {
+  color: #777777;
+}
+.navbar-new .navbar-link:hover {
+  color: #333333;
+}
+/*Navbar */
+
+
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.btn-top {
+color:#f1f1f1;
+background:none repeat scroll 0 0 rgba(0, 0, 0, 0.57);
+border-color:#cccccc;
+}
+
+.btn-top:hover,
+.btn-top:focus,
+.btn-top:active,
+.btn-top.active {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+
+
+/* Footer */
+footer {
+  padding: 25px 5px ;
+  background:#f1f1f1;
+  text-align:center;
+}
+
+/* responsive */
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { .navbar-brand {margin-left:20px;} .navbar-toggle {margin-right:25px;} }

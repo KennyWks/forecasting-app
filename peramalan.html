@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+	<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<title >Apps PERAMALAN</title>
+	<script language="javascript">
+	function showscroll() {document.body.style.overflow = 'scroll';} </script>
+</head>
+
+
+<body onload="showscroll()">
+	<!--Header Area -->
+	<div id="wrapper"> <div id="nav">
+	<!--Navigation -->
+	<nav class="navbar navbar-new" role="navigation">
+	<div class="container">
+	<!--Brand and toggle get grouped for better mobile display -->
+
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data -target="#mobilemenu"> 
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+
+		</button>
+<a href="#" target="_blank" class="navbar-brand"> <img style="float: left; border: 3px dotted white; margin: 0px 15px 1px 0px;"src= "images/oreo.gif" width="120" height="90"> APLIKASI WEB PERAMALAN / PREDIKSI <hr> SILAHKAN MASUKAN DATA DI FORM</hr> </a>
+	
+
+	</div>
+
+<div class="collapse navbar-collapse" id="mobilemenu">
+	<ul class="nav navbar-nav navbar-right text-center">
+	<li><a href="index.html"></i>&nbsp;HOME</a></li>
+	<li><a href="konsep.html"></i>&nbsp;KONSEP</a></li>
+	<li><a href="peramalan"></i>&nbsp;PERAMALAN</a></li>
+	<li><a href="tentang.html"></i>&nbsp;TENTANG</a></li>
+	</ul>
+</div>
+
+
+<!--/.navbar-collapse-->
+</div>
+</nav>
+<!--/Navigation-->
+</div>
+</div>
+<!--/Header Area-->
+
+
+<div class="container"> 
+<div class="row">
+<div class="col-sm-4">
+<form id="Exponential">
+<h4>Metode Exponential Smoothing</h4>
+<p>Jumlah mahasiswa tahun 2013 <input id="numb1"></p>
+<p>Jumlah mahasiswa tahun 2014 <input id="numb2"></p>
+<p>Jumlah mahasiswa tahun 2015 <input id="numb3"></p>
+<p>Jumlah mahasiswa tahun 2016 <input id="numb4"></p>
+<p>Jumlah mahasiswa tahun 2017 <input id="numb5"></p>
+<p>Jumlah mahasiswa tahun 2018 <input id="numb6"></p>
+<button type="button" onclick="exponential()">Prediksi\Ramal</button>
+<input type="button" onclick="ulangE()" value= "Atur Ulang">
+</form>
+</div>
+
+
+<div class="col-sm-4">
+<form id="Moving">	
+<h4>Metode Moving Average</h4>
+<p>Jumlah mahasiswa tahun 2013 <input id="numb1"></p>
+<p>Jumlah mahasiswa tahun 2014 <input id="numb2"></p>
+<p>Jumlah mahasiswa tahun 2015 <input id="numb3"></p>
+<p>Jumlah mahasiswa tahun 2016 <input id="numb4"></p>
+<p>Jumlah mahasiswa tahun 2017 <input id="numb5"></p>
+<p>Jumlah mahasiswa tahun 2018 <input id="numb6"></p>
+<button type="button" onclick="moving()">Prediksi\Ramal</button>
+<input type="button" onclick="ulangM()" value= "Atur Ulang">
+</form>
+</div>
+
+
+<div class="col-sm-4">
+<form id="Regression">
+<h4>Metode Linear Regression</h4>
+<p>Jumlah mahasiswa tahun 2013 <input id="numb1"></p>
+<p>Jumlah mahasiswa tahun 2014 <input id="numb2"></p>
+<p>Jumlah mahasiswa tahun 2015 <input id="numb3"></p>
+<p>Jumlah mahasiswa tahun 2016 <input id="numb4"></p>
+<p>Jumlah mahasiswa tahun 2017 <input id="numb5"></p>
+<p>Jumlah mahasiswa tahun 2018 <input id="numb6"></p>
+<button type="button" onclick="regresion()">Prediksi/Ramal</button>
+<input type="button" onclick="ulangR()" value= "Atur Ulang">
+</form>
+</div>
+
+
+<div class="col-sm-4">
+<form id="Weighted">
+<h4>Metode Weighted Moving Average</h4>
+<p>Jumlah mahasiswa tahun 2013 <input id="numb1"></p>
+<p>Jumlah mahasiswa tahun 2014 <input id="numb2"></p>
+<p>Jumlah mahasiswa tahun 2015 <input id="numb3"></p>
+<p>Jumlah mahasiswa tahun 2016 <input id="numb4"></p>
+<p>Jumlah mahasiswa tahun 2017 <input id="numb5"></p>
+<p>Jumlah mahasiswa tahun 2018 <input id="numb6"></p>
+<button type="button" onclick="weight()">Prediksi/Ramal</button>
+<input type="button" onclick="ulangW()" value= "Atur Ulang">
+</form>
+</div>
+
+
+<div class="col-sm-4">
+<form id="demo">
+<h3>MAD</h3>
+<p>Masukan MAD (Metode Regression linear) : <input id="numb1" ></p>
+<p>Masukan MAD (Metode Exponential Smoothing): <input id="numb3"></p>
+<p>Masukan MAD (Metode Moving Averange): <input id="numb5"></p>
+<p>Masukan MAD (Metode Weighted Moving Average): <input id="numb7"></p>
+</div>
+
+
+<div class="col-sm-4">
+<h3>MSE</h3>
+<p>Masukan Nilai MSE (Metode Regression linear): <input id="numb2"></p>
+<p>Masukan MSE (Metode Exponential Smoothing): <input id="numb4"></p>
+<p>Masukan MSE (Metode Moving Averange): <input id="numb6"></p>
+<p>Masukan MSE (Metode Weighted Moving Average): <input id="numb8"></p>
+<button type="button" onclick="myFunction()">Proses</button>
+<input type="button" onclick="ulangD()" value= "Atur Ulang">
+</form>
+</div>
+</div>
+
+<br>
+<footer>
+<div class="row">
+<div class="col-lg-12">
+<p>Copyright © <a href="http://www.facebook.com" target="_blank">yandres asbanu</a> 2018</p>
+</div>
+</div>
+</footer>
+</div>
+<!--/container-->
+</body>
+</html>
+
+
+
+<script>
+//Exponential Smoothing
+function exponential(){
+
+var A,B,C,D,E,F;
+var alpha,k,l,m,n,o,p,Smoothing,ramal;
+var g,h,i,j,r,total;
+var mad,mse,bulatmad,bulatmse;
+
+A=document.getElementById("numb1").value;
+B=document.getElementById("numb2").value;
+C=document.getElementById("numb3").value;
+D=document.getElementById("numb4").value;
+E=document.getElementById("numb5").value;
+F=document.getElementById("numb6").value;
+
+alpha=2/(6+1);
+k=parseInt(A) + alpha * (parseInt(A)-parseInt(A));
+l=parseInt(A) + alpha * (parseInt(B)-parseInt(A)); 
+m=l + alpha * (parseInt(C)- l);
+n=m + alpha * (parseInt(D)- m);
+o=n + alpha * (parseInt(E)- n);
+p=o + alpha * (parseInt(F)- o);
+ramal= Math.round(p);
+
+//menghitung selisih
+g=parseInt(A)-parseInt(B);
+h=parseInt(C)-l;
+i=parseInt(D)-m;
+j=parseInt(E)-n;
+r=parseInt(F)-o;
+total=g+h+i+j+r;
+
+//menghitung mad dan mse
+mad=total/5;
+mse=((g*g) + (h*h) + (i*i) + (j*j) + (r*r)) / 5;
+
+//pembulatan mad dan mse
+bulatmad= Math.round(mad);
+bulatmse= Math.round(mse);
+
+
+Smoothing =  "Prediksi jumlah mahasiswa di tahun 2019 sebanyak " +ramal+ " Mahasiswa/i" + "<br>"
+        	+ "MAD Yaitu : " +bulatmad+ " " + "<br>"
+			+ "MSE Yaitu : " +bulatmse+ " " + "<br>"
+
+document.getElementById("Exponential").innerHTML=Smoothing;}
+</script>
+
+<script>
+function ulangE() {
+document.getElementById("Exponential").reset();}
+</script>
+
+
+
+<script>
+//rumus moving averange
+function moving(){
+
+var A,B,C,D,E,F,g,h,i,j,k,l,m,total,mad,mse,bulatmad,bulatmse,Moving,ramal;
+var n =3;
+
+A=document.getElementById("numb1").value;
+B=document.getElementById("numb2").value;
+C=document.getElementById("numb3").value;
+D=document.getElementById("numb4").value;
+E=document.getElementById("numb5").value;
+F=document.getElementById("numb6").value;
+
+//hitung metode
+g=(parseInt(A) + parseInt(B) + parseInt(C))/n; 
+h=(parseInt(B) + parseInt(C) + parseInt(D))/n;
+i=(parseInt(C) + parseInt(D) + parseInt(E))/n;
+j=(parseInt(D) + parseInt(E) + parseInt(F))/n;
+ramal= Math.round(j);
+
+//hitung selisih
+k=parseInt(D)-g;
+l=parseInt(E)-h;
+m=parseInt(F)-i;
+total=k+l+m;
+
+//hitung mad & mse
+mad=total/3
+mse=(k*k) + (l*l) + (m*m)/3;
+bulatmad= Math.round(mad);
+bulatmse= Math.round(mse);
+
+Moving =  "Prediksi jumlah mahasiswa di tahun 2019 sebanyak " +ramal+ " Mahasiswa/i" + "<br>"
+        + "MAD Yaitu : " +bulatmad+ " " + "<br>"
+	+ "MSE Yaitu : " +bulatmse+ " " + "<br>"
+
+document.getElementById("Moving").innerHTML=Moving;}
+</script>
+
+<script>
+function ulangM() {
+document.getElementById("Moving").reset();}
+</script>
+
+
+<script>
+//rumus regersion linear
+function regresion(){
+
+var a,b,c,d,e,f;
+var XiYi,Ft,Xii,Xi,k,l;
+var m,n,o,p,q,r,hasilramalan,text;
+var x,y,z,i,s,w,hasil,mad,mse;
+var hasilmad, hasilmse;
+
+a=document.getElementById("numb1").value;
+b=document.getElementById("numb2").value;
+c=document.getElementById("numb3").value;
+d=document.getElementById("numb4").value;
+e=document.getElementById("numb5").value;
+f=document.getElementById("numb6").value;
+
+XiYi=(parseInt(a) * 1) + (parseInt(b) * 2) +  (parseInt(c) * 3) + (parseInt(d) * 4) + (parseInt(e) * 5) + (parseInt(f) * 6);
+Ft=parseInt(a) + parseInt(b) +  parseInt(c) + parseInt(d) + parseInt(e) + parseInt(f);
+Xii= (1*1) + (2*2) + (3*3) + (4*4) + (5*5) + (6*6);
+Xi= 1+2+3+4+5+6;
+k= ((6 * XiYi) - (Xi * Ft )) / ((6 * Xii) - (Xi*Xi));
+l= (Ft/6) - (k * (Xi/6));
+
+//hitung y
+m =l+k;
+n= m+k;
+o= n+k;
+p= o+k;
+q= p+k;
+r= q+k;
+hasilramalan= Math.round(r);
+
+//Yt-Ft
+x=parseInt(a)-m;
+y=parseInt(b)-n;
+z=parseInt(c)-o;
+i=parseInt(d)-p;
+s=parseInt(e)-q;
+w=parseInt(f)-r;
+
+//rumus mad & mse
+hasil=x+y+z+i+s+w;
+mad= hasil/6
+mse= ((x*x) + (y*y) + (z*z) + (i*i) + (s*s) + (w*w)) / 6
+
+//pembulatan mse
+hasilmad= Math.round(mad);
+hasilmse= Math.round(mse);
+
+
+text =  "Prediksi jumlah mahasiswa di tahun 2019 sebanyak " +hasilramalan+ " Mahasiswa/i" + "<br>"
+        + "MAD Yaitu : " +hasilmad+ " " + "<br>"
+	+ "MSE Yaitu : " +hasilmse+ " " + "<br>"
+
+document.getElementById("Regression").innerHTML=text;}
+</script>
+
+<script>
+function ulangR() {
+document.getElementById("Regression").reset();}
+</script>
+
+
+<script>
+//rumus weight moving averange
+function weight(){
+
+var A,B,C,D,E,F,g,h,i,j,k,l,n,hasil,total,mad,mse,bulatmad,bulatmse,text,ramal;
+var ba =0.2;
+var bb =0.3;
+var bc =0.5;
+
+A=document.getElementById("numb1").value;
+B=document.getElementById("numb2").value;
+C=document.getElementById("numb3").value;
+D=document.getElementById("numb4").value;
+E=document.getElementById("numb5").value;
+F=document.getElementById("numb6").value;
+
+//hitung metode
+g=(ba*parseInt(A)) + (bb*parseInt(B)) + (bc*parseInt(C)); 
+h=(ba*parseInt(B)) + (bb*parseInt(C)) + (bc*parseInt(D));
+i=(ba*parseInt(C)) + (bb*parseInt(D)) + (bc*parseInt(E));
+j=(ba*parseInt(D)) + (bb*parseInt(E)) + (bc*parseInt(F));
+ramal= Math.round(j);
+
+//hitung selisih
+k=parseInt(D)-g;
+l=parseInt(E)-h;
+n=parseInt(F)-i;
+total=k+l+n;
+
+//hitung mad & mse
+mad=total/3
+mse=(k*k) + (l*l) + (n*n)/3;
+bulatmad= Math.round(mad);
+bulatmse= Math.round(mse);
+
+text =  "Prediksi jumlah mahasiswa di tahun 2019 sebanyak " +ramal+ " Mahasiswa/i" + "<br>"
+        + "MAD Yaitu : " +bulatmad+ " " + "<br>"
+	+ "MSE Yaitu : " +bulatmse+ " " + "<br>"
+
+document.getElementById("Weighted").innerHTML=text;}
+</script>
+
+<script>
+function ulangW() {
+document.getElementById("Weighted").reset();}
+</script>
+
+
+<script>
+//rumus mad dan mse
+	function myFunction (){
+		var madr,mser,made,msee,madm,msem,madw,msew,text,hasil;
+
+		//get the value of the input field with id="numb"
+		madr=document.getElementById ("numb1").value;
+		mser=document.getElementById ("numb2").value;
+		made=document.getElementById ("numb3").value;
+		msee=document.getElementById ("numb4").value;
+		madm=document.getElementById ("numb5").value;
+		msem=document.getElementById ("numb6").value;
+		madw=document.getElementById ("numb7").value;
+		msew=document.getElementById ("numb8").value;
+		
+
+		if (isNaN (madr) || isNaN (mser) || isNaN (made) || isNaN (msee) || isNaN (madm) || isNaN (msem) || isNaN (madw) || isNaN (msew)) {
+			text="Masukan Harus berupa Angka";
+		}
+		
+		//regresi
+		else if (madr && mser < ((made && msee) && (madm && msem) && (madw && msew))) {
+			
+			hasil = "metode Regresi Linear yang paling akurat";
+		}
+
+
+		//exponential
+		else if(made && msee < ((madr && mser) && (madm && msem) && (madw && msew))) {
+
+			hasil = "metode Exponential Smooting yang paling akurat";
+		}
+		
+
+		//moving averange
+		else if(madm && msem < ((madr && mser) && (made && msee) && (madw && msew))){
+
+			hasil = "metode Moving Averange yang paling akurat";
+		}
+
+
+		//weight
+		else if(madw && msew < ((madr && mser) && (made && msee) && (madm && msem))){
+
+			hasil = "metode Weighted Moving Average yang paling akurat";
+		}
+
+
+		else {
+
+			hasil = "Input Tidak Valid"
+		}
+
+		text="Hasil Perkiraan Metode Yang Paling Akurat : " +hasil;
+				  
+		document.getElementById("demo").innerHTML = text;
+	}
+
+</script>
+
+<script>
+function ulangD() {
+document.getElementById("demo").reset();}
+</script>
+
+<!--/container-->
+</body>
+</html>
