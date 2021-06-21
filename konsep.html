@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-	<html lang="en">
+<html lang="id">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,150 +9,231 @@
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/bootstrap.js"></script>
 
-	<title >KONSEP PERAMALAN</title>
+	<title>KONSEP PERAMALAN</title>
 	<script language="javascript">
-	function showscroll() {document.body.style.overflow = 'scroll';} </script>
+		function showscroll() { document.body.style.overflow = 'scroll'; }</script>
 </head>
 
 
 <body onload="showscroll()">
 	<!--Header Area -->
-	<div id="wrapper"> <div id="nav">
-	<!--Navigation -->
-	<nav class="navbar navbar-new" role="navigation">
+	<div id="wrapper">
+		<div id="nav">
+			<!--Navigation -->
+			<nav class="navbar navbar-new" role="navigation">
+				<div class="container">
+					<!--Brand and toggle get grouped for better mobile display -->
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobilemenu">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a href="#" target="_blank" class="navbar-brand"> <img
+								style="float: left; border: 3px dotted white; margin: 0px 15px 1px 0px;"
+								src="images/image.gif" width="120" height="90"> SELAMAT DATANG DI MENU KONSEP
+							<hr>Pelajari tentang metode peramalan.</hr>
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="mobilemenu">
+						<ul class="nav navbar-nav navbar-right text-center">
+							<li><a href="index.html"></i>&nbsp;HOME</a></li>
+							<li><a href="konsep.html"></i>&nbsp;KONSEP</a></li>
+							<li><a href="peramalan.html"></i>&nbsp;PERAMALAN</a></li>
+							<li><a href="tentang.html"></i>&nbsp;TENTANG</a></li>
+						</ul>
+					</div>
+					<!--/.navbar-collapse-->
+				</div>
+			</nav>
+			<!--/Navigation-->
+		</div>
+	</div>
+	<!--/Header Area-->
+
 	<div class="container">
-	<!--Brand and toggle get grouped for better mobile display -->
-
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data -target="#mobilemenu"> 
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		</button>
-
-	<a href="#" target="_blank" class="navbar-brand"> <img style="float: left; border: 3px dotted white; margin: 0px 5px 1px 0px;"src= "images/image.gif" width="120" height="90"> SELAMAT DATANG!<hr>Anda akan mempelajari teori tentang metode peramalan yang digunakan pada aplikasi web ini!</hr> </a>
-
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Apa itu Aplikasi Peramalan Mahasiswa?</h2>
+				<p style="text-align:justify">&nbsp;Aplikasi peramalan mahasiswa baru yaitu aplikasi web yang bertujuan
+					untuk
+					memprediksi jumlah mahasiswa baru yang mendaftar masuk ke sebuah perguruan tinggi pada tahun
+					akademik
+					yang baru, aplikasi ini dapat memprediksi jumlah mahasiswa baru yang mendaftar dengan menggunakan
+					data
+					mahasiswa yang masuk pada periode atau angkatan sebelumnya.
+				<p style="text-align:justify"> &nbsp;Pada aplikasi ini, prediksi atau peramalan jumlah mahasiswa yang
+					mendaftar akan
+					menggunakan beberapa metode yang bersifat matematis dan sekaligus menjadi fitur -fitur yang akan
+					diberikan dari aplikasi tersebut. dengan bebagai macam fitur atau metode yang digunakan maka akan
+					memberikan pilihan-pilihan kepada user untuk mempredikisi jumlah mahasiswa baru sesuai dengan metode
+					yang diinginkan oleh user, selain itu aplikasi ini juga dapat memberikan rekomendasi prediksi yang
+					paling mendekati data real(nyata) dari beberapa fitur atau metode yang digunakan.</P>
+				<p style="text-align:justify">&nbsp;Aplikasi ini menggunakan metode sebagai berikut : metode Regression
+					Linear, metode
+					Exponential smoothing, metode Weighted Moving Average, metode Moving Average, selain itu dari
+					berbagai
+					macam metode di atas aplikasi ini juga akan menentukan nilai MAD dan MSE dari setiap metode yang
+					digunakan. MAD dan MSE adalah metode yang digunakan untuk menghitung kesalahan peramalan atau
+					forecast
+					error dari setiap perhitungan matematis metode-metode di atas. Dibawah ini dijabarkan teori dari
+					setiap
+					metode yang digunakan.</P>
+				<hr>
+			</div>
+		</div>
 	</div>
 
-<div class="collapse navbar-collapse" id="mobilemenu">
-	<ul class="nav navbar-nav navbar-right text-center">
-	<li><a href="index.html"></i>&nbsp;HOME</a></li>
-	<li><a href="konsep.html"></i>&nbsp;KONSEP</a></li>
-	<li><a href="peramalan.html"></i>&nbsp;PERAMALAN</a></li>
-	<li><a href="tentang.html"></i>&nbsp;TENTANG</a></li>
-	
-	</ul>
-</div>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h4><img style="max-width:70px; margin-top:-7px;" src="images/regresi.jpg">Metode Regression Linear</h4>
+				<p style="text-align:justify">&nbsp;Model analisis Regresi Linier adalah suatu metode populer untuk
+					berbagai macam
+					permasalahan. Menurut Harding (1974) dua variabel yang digunakan, variabel x dan variabel y,
+					diasumsikan memiliki kaitan satu sama lain dan bersifat linier.</p>
+				<p style="text-align:justify">&nbsp;Model Regresi Linier ( Linier Forecasting ) Regresi Linier Merupakan
+					analisis
+					statistika yang memodelkan hubungan beberapa variabel menurut bentuk hubungan persamaan linier
+					eksplisit. Persamaan linier bentuk eksplisit adalah persamaan linier yang menempatkan suatu peubah
+					secara tunggal pada salah satu persamaan. Metode Regresi Merupakan salah satu teknik analisis
+					statistika yang digunakan untuk menggambarkan hubungan antara satu variabel respon dengan satu atau
+					lebih variabel penjelas.</P>
+				<P>metode Rumus perhitungan Regresi Linier yaitu sebagai berikut:</P>
+				<p style="text-align:center">y ‘= a + b x </P>
+				<b>Keterangan:</b>
+				<P>y : variabel dependen</P>
+				<P>a : konstanta</P>
+				<P>b : koefisien variabel X</P>
+				<P>x : variabel independen</P>
+				<a href="https://fikahastarita.files.wordpress.com/2008/12/8peramalan-regresi.pdf"
+					target="_blank"><strong>Referensi...</strong></a></p>
+			</div>
 
-<!--/.navbar-collapse-->
-</div>
-</nav>
-<!--/Navigation-->
-</div>
-</div>
-<!--/Header Area-->
+			<div class="col-sm-4">
+				<h4><img style="max-width:70px; margin-top:-7px;" src="images/weight.jpg"> Metode Moving Average</h4>
+				<p style="text-align:justify">&nbsp;Moving Average atau dalam bahasa Indonesia disebut dengan Rata-rata
+					Bergerak
+					adalah salah satu metode peramalan bisnis yang sederhana dan sering digunakan untuk memperkirakan
+					kondisi pada masa yang akan datang dengan menggunakan kumpulan data-data masa lalu (data-data
+					historis). Dalam Manajemen Operasi dan Produksi, kumpulan data disini dapat berupa volume penjualan
+					dari historis perusahaan. Periode waktu kumpulan data tersebut dapat berupa Tahunan, Bulanan,
+					Mingguan bahkan Harian. Metode Peramalan Moving Average ini sering digunakan dalam peramalan bisnis
+					seperti peramalan permintaan pasar (demand forecasting), analisis teknikal pergerakan saham dan
+					forex serta memperkirakan tren-tren bisnis di masa yang akan datang.</p>
+				<p>Rumus Moving Average atau Rata-rata Bergerak adalah sebagai berikut :
+				<p style="text-align:center">MA = ΣX / Jumlah Periode</p>
+				<p>Keterangan :</p>
+				<p>MA = Moving Average</p>
+				<p>ΣX = Keseluruhan Penjumlahan dari semua data periode waktu yang diperhitungkan</p>
+				<p>Jumlah Periode = Jumlah Periode Rata-rata bergerak</p>
+				<a href="https://ilmumanajemenindustri.com/pengertian-moving-average-rata-rata-bergerak-rumus-moving-average/"
+					target="_blank"><strong>Referensi...</strong></a></p>
+			</div>
 
-<div class="container"> 
-<div class="row">
-<h2>Apa itu Aplikasi peramalan Mahasiswa?</h2>
-<p align="justify">&nbsp;Aplikasi peramalan mahasiswa baru yaitu aplikasi web yang bertujuan untuk memprediksi jumlah mahasiswa baru yang mendaftar masuk ke sebuah perguruan tinggi pada tahun akademik yang baru, aplikasi ini dapat memprediksi jumlah mahasiswa baru yang mendaftar dengan menggunakan data mahasiswa yang masuk pada periode atau angkatan sebelumnya. 
-<p align="justify"> &nbsp;Pada aplikasi ini, prediksi atau peramalan jumlah mahasiswa yang mendaftar akan menggunakan beberapa metode yang bersifat matematis dan sekaligus menjadi fitur -fitur yang akan diberikan dari aplikasi tersebut. dengan bebagai macam fitur atau metode yang digunakan maka akan memberikan pilihan-pilihan kepada user untuk mempredikisi jumlah mahasiswa baru sesuai dengan metode yang diinginkan oleh user, selain itu aplikasi ini juga dapat memberikan rekomendasi prediksi yang paling mendekati data real(nyata) dari beberapa fitur atau metode yang digunakan.</P>	
-<p align="justify">&nbsp;Aplikasi ini menggunakan metode sebagai berikut : metode Regression Linear, metode Exponential smoothing,  metode Weighted Moving Average, metode Moving Average, selain itu dari berbagai macam metode di atas aplikasi ini juga akan menentukan nilai MAD dan MSE dari setiap metode yang digunakan. MAD dan MSE adalah metode yang digunakan untuk menghitung kesalahan peramalan atau forecast error dari setiap perhitungan matematis metode-metode di atas. Dibawah ini dijabarkan teori dari setiap metode yang digunakan.</P>
-<hr>
-</div>
-</div>
+			<div class="col-sm-4">
+				<h4><img style="max-width:70px; margin-top:-7px;" src="images/exponential.jpg">Metode Exponential
+					Smoothing</h4>
+				<p style="text-align:justify">&nbsp;Peramalan dengan Exponential Smoothing (Penghalusan Eksponensial) –
+					Exponential
+					smoothing atau dalam bahasa Indonesia disebut dengan Penghalusan Eksponensial adalah suatu metode
+					peramalan rata-rata bergerak yang memberikan bobot secara eksponensial atau bertingkat pada
+					data-data terbarunya sehingga data-data terbaru tersebut akan mendapatkan bobot yang lebih besar.
+					Dengan kata lain, semakin baru atau semakin kini datanya, semakin besar pula bobotnya. Hal ini
+					dikarenakan data yang terbaru dianggap lebih relavan sehingga diberikan bobot yang lebih besar.
+					Parameter penghalusan (smoothing) biasanya dilambangkan dengan α (alpha).</p>
+				<p style="text-align:justify">&nbsp;Peramalan dengan Exponential Smoothing atau Metode Penghalusan
+					Eksponensial ini
+					cukup mudah, yaitu dengan memasukan prakiraan permintaan sekarang dengan data permintaan nyata atau
+					data permintaan aktual ke dalam rumus Exponential Smoothing. Berikut ini adalah rumus untuk
+					menghitung exponential smoothing :
+				<p style="text-align:center">Ft = Ft – 1 + α (Dt-1 – Ft-1)</p>
+				<b>Ketrangan</b>
+				<p>Ft = Prakiraan Permintaan sekarang</p>
+				<p>Ft-1 = Prakiraan Permintaan yang lalu</p>
+				<p>α = Konstanta Eksponensial</p>
+				<p>Dt-1 = Permintaan Nyata</p>
+				<a href="https://ilmumanajemenindustri.com/peramalan-dengan-exponential-smoothing-penghalusan-eksponensial/"
+					target="_blank"><strong>Referensi...</strong></a></p>
+			</div>
 
+			<div class="col-sm-4">
+				<h4><img style="max-width:70px; margin-top:-7px;" src="images/moving.jpg">Metode WMA</h4>
+				<p style="text-align:justify">&nbsp;Metode Weighted Moving Average (WMA) adalah metode forecast atau
+					peramalan yang
+					bekerja dengan menggunakan beberapa data terakhir dengan memberikan bobot yang berbeda-beda. Hal ini
+					bisa didasarkan jika pengaruh data yang lebih baru adalah lebih besar dari data yang lebih lama
+					terhadap keadaan di masa datang.</p>
+				<p style="text-align:justify">&nbsp;Metode ini mirip dengan metode moving average, hanya saja diperlukan
+					pembobotan
+					untuk data paling baru dari deret berkala. Sebagai contoh data yang paling baru ditentukan bobotnya
+					sebesar 0.4, dan terbaru berikutnya berbobot 0.3, kemudian berturut-turut 0.2 dan terakhir 0.1. dan
+					perlu diingat bahwajumlah bobot yang diberikan harus sama dengan 1.00. dan bobot terberat diberikan
+					pada data yang terbaru.
+				<p style="text-align:justify">Secara matematis, metode MA memiliki persamaan sebagai berikut jika kita
+					menggunakan
+					n data terakhir:
+				<p style="text-align:justify">Perkiraan untuk periode p = (Bobot ke-(p – n) * Data akual ke-(p – n) +
+					Bobot ke-(p –
+					n + 1) * Data akual ke-(p – n + 1) + .. + Bobot ke-(p – 1) * Data akual ke-(p – 1))</p>
+				<a href="https://staff.blog.ui.ac.id/komarudin74/forecasting-moving-average-dan-weighted-moving-average/"
+					target="_blank"><strong>Referensi...</strong></a></p>
+			</div>
 
-<div class="container"> 
-<div class="row">
-<div class="col-sm-4">
-<h4><img style="max-width:70px; margin-top:-7px;" src="images/regresi.jpg">Metode Regression Linear</h4>
-<p align="justify">&nbsp;Model analisis Regresi Linier adalah suatu metode populer untuk berbagai macam permasalahan. Menurut Harding (1974) dua variabel yang digunakan, variabel x dan variabel y, diasumsikan memiliki kaitan satu sama lain dan bersifat linier.</p>  
-<p align="justify">&nbsp;Model Regresi Linier ( Linier Forecasting ) Regresi Linier Merupakan analisis statistika yang memodelkan hubungan beberapa variabel menurut bentuk hubungan persamaan linier eksplisit. Persamaan linier bentuk eksplisit adalah persamaan linier yang menempatkan suatu peubah secara tunggal pada salah satu persamaan. Metode Regresi Merupakan salah satu teknik analisis statistika yang digunakan untuk menggambarkan hubungan antara satu variabel respon dengan satu atau lebih variabel penjelas.</P> 
-<P>metode Rumus perhitungan Regresi Linier yaitu sebagai berikut:</P>
-<p align="center">y ‘= a + b x </P>
-<b>Keterangan:</b>
-<P>y : variabel dependen</P>
-<P>a : konstanta</P>
-<P>b : koefisien variabel X</P>
-<P>x : variabel independen</P>
-<a href="https://fikahastarita.files.wordpress.com/2008/12/8peramalan-regresi.pdf" target="_blank"><strong>Referensi...</strong></a></p>
-</div>
+			<div class="col-sm-4">
+				<h4><img style="max-width:70px; margin-top:-7px;" src="images/mad.jpg">Metode MAD</h4>
+				<p style="text-align:justify">&nbsp;MAD (Mean Absolute Deviation) atau dalam bahasa indonesia yaitu
+					Deviasi
+					Rata-rata Absolut adalah ukuran kesalahan peramalan keseluruhan untuk sebuah model. Nilai ini
+					dihitung dengan mengambil jumlah nilai absolut dari kesalahan peramalan dibagi dengan jumlah periode
+					data (n)</p>
+				<p>Rumus MAD adalah sebagai berikut :</p>
+				<p style="text-align:center">MAD : (∑| permintaan aktual-peramalan)/n</p>
+				<a href="images/prediksi-jumlah-penerimaan-siswa-smk-swa.pdf"
+					target="_blank"><strong>Referensi...</strong></a></p>
+			</div>
 
+			<div class="col-sm-4">
+				<h4><img style="max-width:70px; margin-top:-7px;" src="images/mse.jpg">Metode MSE</h4>
+				<p style="text-align:justify">&nbsp;MSE (Mean Squared Error ) atau dalam bahasa indonesia yaitu
+					Kesalahan Rata-rata
+					Kuadrat adalah cara untuk mengukur kesalahan peramalan keseluruhan. MSE merupakan rata-rata selisih
+					kuadrat antara nilai yang diramalkan dan yang diamati. Kekurangan penggunaan MSE adalah bahwa metode
+					ini cenderung menonjolkan deviasi yang besar karena adanya pengkuadratan. </p>
+				<p>Rumus MSE adalah sebagai berikut :</p>
+				<p style="text-align:center">MSE : ( ∑| kesalahan peramalan)2/n</p>
+				<a href="images/prediksi-jumlah-penerimaan-siswa-smk-swa.pdf"
+					target="_blank"><strong>Referensi...</strong></a></p>
+			</div>
+		</div>
 
-<div class="col-sm-4">
-<h4><img style="max-width:70px; margin-top:-7px;" src="images/weight.jpg"> Metode Moving Average</h4>
-<p align="justify">&nbsp;Moving Average atau dalam bahasa Indonesia disebut dengan Rata-rata Bergerak adalah salah satu metode peramalan bisnis yang sederhana dan sering digunakan untuk memperkirakan kondisi pada masa yang akan datang dengan menggunakan kumpulan data-data masa lalu (data-data historis). Dalam Manajemen Operasi dan Produksi, kumpulan data disini dapat berupa volume penjualan dari historis perusahaan. Periode waktu kumpulan data tersebut dapat berupa Tahunan, Bulanan, Mingguan bahkan Harian. Metode Peramalan Moving Average ini sering digunakan dalam peramalan bisnis seperti peramalan permintaan pasar (demand forecasting), analisis teknikal pergerakan saham dan forex serta memperkirakan tren-tren bisnis di masa yang akan datang.</p>
-<p>Rumus Moving Average atau Rata-rata Bergerak adalah sebagai berikut :
-<p align="center">MA = ΣX / Jumlah Periode</p>
-<p>Keterangan :</p>
-<p>MA = Moving Average</p>
-<p>ΣX  = Keseluruhan Penjumlahan dari semua data periode waktu yang diperhitungkan</p>
-<p>Jumlah Periode = Jumlah Periode Rata-rata bergerak</p>
-<a href="https://ilmumanajemenindustri.com/pengertian-moving-average-rata-rata-bergerak-rumus-moving-average/" target="_blank"><strong>Referensi...</strong></a></p>
-</div>
+		<hr>
 
-<div class="col-sm-4">
-<h4><img style="max-width:70px; margin-top:-7px;" src="images/exponential.jpg">Metode Exponential Smoothing</h4>
-<p align="justify">&nbsp;Peramalan dengan Exponential Smoothing (Penghalusan Eksponensial) – Exponential smoothing atau dalam bahasa Indonesia disebut dengan Penghalusan Eksponensial adalah suatu metode peramalan rata-rata bergerak yang memberikan bobot secara eksponensial atau bertingkat pada data-data terbarunya sehingga data-data terbaru tersebut akan mendapatkan bobot yang lebih besar. Dengan kata lain, semakin baru atau semakin kini datanya, semakin besar pula bobotnya. Hal ini dikarenakan data yang terbaru dianggap lebih relavan sehingga diberikan bobot yang lebih besar. Parameter penghalusan (smoothing) biasanya dilambangkan dengan α (alpha).</p>
-<p align="justify">&nbsp;Peramalan dengan Exponential Smoothing atau Metode Penghalusan Eksponensial ini cukup mudah, yaitu dengan memasukan prakiraan permintaan sekarang dengan data permintaan nyata atau data permintaan aktual ke dalam rumus Exponential Smoothing. Berikut ini adalah rumus untuk menghitung exponential smoothing :
-<p align="center">Ft = Ft – 1 + α (Dt-1 – Ft-1)</p>
-<b>Ketrangan</b>
-<p>Ft = Prakiraan Permintaan sekarang</p>
-<p>Ft-1 = Prakiraan Permintaan yang lalu</p>
-<p>α = Konstanta Eksponensial</p>
-<p>Dt-1 = Permintaan Nyata</p>
-<a href="https://ilmumanajemenindustri.com/peramalan-dengan-exponential-smoothing-penghalusan-eksponensial/" target="_blank"><strong>Referensi...</strong></a></p>
-</div>
+		<p><img style="float: left; border: 0px dotted black; margin: 0px 15px 15px 0px;" src="images/ramal2.jpg"
+				width="150" height="100">
+			&nbsp;Sebenarnya dari beberapa metode di atas terdapat berbagai macam metode lain yang dapat dipakai namun
+			developer hanya menggunakan beberapa metode di atas sebagai sampel dan percobaan dalam penerapannya di
+			aplikasi berbasis web ini, selain itu dari setiap metode yang digunakan di atas terdapat berbagai macam
+			kelemahan dan kelebihan yang dimilki oleh tiap metode tersebut namun user (pengguna) dapat menggunakan
+			sesuai kebutuhan dan keinginan user.
+		<p>Silahkan masuk ke tab <a href="peramalan.html" target="_blank"><strong>Peramalan</strong></a> untuk mencoba
+			aplikasi,Terima Kasih.</p>
 
+		<br>
+		<footer>
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright © <a href="http://www.facebook.com/Kenny+Wks" target="_blank">Kenny_Wks</a> 2018</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-<div class="col-sm-4">
-<h4><img style="max-width:70px; margin-top:-7px;" src="images/moving.jpg">Metode WMA</h4>
-<p align="justify">&nbsp;Metode Weighted Moving Average (WMA) adalah metode forecast atau peramalan yang bekerja dengan menggunakan beberapa data terakhir dengan memberikan bobot yang berbeda-beda. Hal ini bisa didasarkan jika pengaruh data yang lebih baru adalah lebih besar dari data yang lebih lama terhadap keadaan di masa datang.</p>
-<p align="justify">&nbsp;Metode ini mirip dengan metode moving average, hanya saja diperlukan pembobotan untuk data paling baru dari deret berkala. Sebagai contoh data yang paling baru ditentukan bobotnya sebesar 0.4, dan terbaru berikutnya berbobot 0.3, kemudian berturut-turut 0.2 dan terakhir 0.1. dan perlu diingat bahwajumlah bobot yang diberikan harus sama dengan 1.00. dan bobot terberat diberikan pada data yang terbaru.
-<p align="justify">Secara matematis, metode MA memiliki persamaan sebagai berikut jika kita menggunakan n data terakhir:
-<p align="justify">Perkiraan untuk periode p = (Bobot ke-(p – n) * Data akual ke-(p – n) + Bobot ke-(p – n + 1) * Data akual ke-(p – n + 1) + .. + Bobot ke-(p – 1) * Data akual ke-(p – 1))</p>
-<a href="https://staff.blog.ui.ac.id/komarudin74/forecasting-moving-average-dan-weighted-moving-average/" target="_blank"><strong>Referensi...</strong></a></p>
-</div>
-
-<div class="col-sm-4">
-<h4><img style="max-width:70px; margin-top:-7px;" src="images/mad.jpg">Metode MAD</h4>
-<p align="justify">&nbsp;MAD (Mean Absolute Deviation) atau dalam bahasa indonesia yaitu Deviasi Rata-rata Absolut adalah ukuran kesalahan peramalan keseluruhan untuk sebuah model. Nilai ini dihitung dengan mengambil jumlah nilai absolut dari kesalahan peramalan dibagi dengan jumlah periode data (n)</p>
-<p>Rumus MAD adalah sebagai berikut :</p>
-<P align="center">MAD : (∑| permintaan aktual-peramalan)/n</P>
-<a href="images/prediksi-jumlah-penerimaan-siswa-smk-swa.pdf" target="_blank"><strong>Referensi...</strong></a></p>
-</div>
-
-<div class="col-sm-4">
-<h4><img style="max-width:70px; margin-top:-7px;" src="images/mse.jpg">Metode MSE</h4>
-<p align="justify">&nbsp;MSE (Mean Squared Error ) atau dalam bahasa indonesia yaitu Kesalahan Rata-rata Kuadrat adalah cara untuk mengukur kesalahan peramalan keseluruhan. MSE merupakan rata-rata selisih kuadrat antara nilai yang diramalkan dan yang diamati. Kekurangan penggunaan MSE adalah bahwa metode ini cenderung menonjolkan deviasi yang besar karena adanya pengkuadratan. </p>
-<p>Rumus MSE adalah sebagai berikut :</p>
-<P align="center">MSE : ( ∑| kesalahan peramalan)2/n</P>
-<a href="images/prediksi-jumlah-penerimaan-siswa-smk-swa.pdf" target="_blank"><strong>Referensi...</strong></a></p>
-</div>
-</div>
-
-<hr>
-
-<p><img style="float: left; border: 0px dotted black; margin: 0px 15px 15px 0px;" src="images/ramal2.jpg" width="150" height="100"> 
-&nbsp;Sebenarnya dari beberapa metode di atas terdapat berbagai macam metode lain yang dapat dipakai namun developer hanya menggunakan beberapa metode di atas sebagai sampel dan percobaan dalam penerapannya di aplikasi berbasis web ini, selain itu dari setiap metode yang digunakan di atas terdapat berbagai macam kelemahan dan kelebihan yang dimilki oleh tiap metode tersebut namun user (pengguna) dapat menggunakan sesuai kebutuhan dan keinginan user.
-<p>Silahkan masuk ke tab <a href="peramalan.html" target="_blank"><strong>Peramalan</strong></a> untuk mencoba aplikasi,Terima Kasih.</p>
-
-
-
-
-<br>
-<footer>
-<div class="row">
-<div class="col-lg-12">
-<p>Copyright © <a href="http://www.facebook.com" target="_blank">Kenny_Wks</a> 2018</p>
-</div>
-</div>
-</footer>
-</div>
-</div>
-<!--/container-->
 </body>
+
 </html>

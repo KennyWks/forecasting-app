@@ -1,76 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
-	<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	<script src="js/jquery.js"></script>
 	<script src="js/jquery-1.10.2.js"></script>
-	<script src="js/jquery.vegas.js"></script>
-	<script src="js/script.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<title >HOME</title>
+	<script src="js/jquery.vegas.js"></script>
+	<title>HOME</title>
 	<script language="javascript">
-	function showscroll() {document.body.style.overflow = 'scroll';} </script>
+		function showscroll() { document.body.style.overflow = 'scroll'; }</script>
 </head>
 
-
-
 <body onload="showscroll()">
-<!--Loading status-->
+	<!--Loading status-->
 
-<!--Header Area-->
-<div id="top" class="header">
-<div id="nav">
-<!--Navigation-->
-<nav class="navbar navbar-new" role="navigation">
-<div class="container">
-<!--Brand and toggle get grouped for better mobile display-->
-<div class="navbar-header">
-	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobilemenu"><span class="sr-only">Toggle navigation</span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	</button>
-	<a href="#" target="_blank" class="navbar-brand"> <img style="float: left; border: 3px dotted white; margin: 0px 15px 1px 0px;"src= "images/Peramalan.jpg" width="90" height="70"> SELAMAT DATANG DI APLIKASI WEBSITE PERAMALAN ATAU PREDIKSI <hr>SILAHKAN KLIK TAB KONSEP UNTUK BELAJAR METODE PERAMALAN</hr> </a>
-</div>
+	<div class="row">
+		<div class="col-md-12">
+			<!--Header Area-->
+			<div id="top" class="header">
+				<div id="nav">
+					<!--Navigation -->
+					<nav class="navbar navbar-new" role="navigation">
+						<div class="container">
+							<!--Brand and toggle get grouped for better mobile display -->
 
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse"
+									data-target="#mobilemenu">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
 
-<ul class="nav navbar-nav navbar-right text-center">
-	<li><a href="index.html"></i>&nbsp;BERANDA</a></li>
-	<li><a href="konsep.html"></i>&nbsp;KONSEP</a></li>
-	<li><a href="peramalan.html"></i>&nbsp;PERAMALAN</a></li>
-	<li><a href="tentang.html"></i>&nbsp;TENTANG</a></li>
-	
-</ul>
-</div>
-</nav>
-<div>
-   <p style ="text-align: center">  <marquee behavior="alternate"> <font size = "6"> <Font color = "red">&nbsp; &nbsp; &nbsp; &nbsp; ANDA BERADA DI MENU BERANDA </marquee> </p></div>
-   <!--/Navigation-->
-</div>
-<a href="#" target="_blank" class="navbar-brand"> <img style="float: right; border: 3px dotted green; margin: 290px 0px 1px 1180px;"src= "images/google.gif" width="130" height="110">
-</div>
+								<a href="#" target="_blank" class="navbar-brand"> <img
+										style="float: left; border: 3px dotted white; margin: 0px 15px 1px 0px;"
+										src="images/Peramalan.jpg" width="90" height="70"> SELAMAT DATANG DI
+									APLIKASI WEBSITE
+									PERAMALAN
+									<hr>Temukan detailnya di menu konsep!</hr>
+								</a>
+							</div>
 
+							<div class="collapse navbar-collapse" id="mobilemenu">
+								<ul class="nav navbar-nav navbar-right text-center">
+									<li><a href="index.html"></i>&nbsp;HOME</a></li>
+									<li><a href="konsep.html"></i>&nbsp;KONSEP</a></li>
+									<li><a href="peramalan.html"></i>&nbsp;PERAMALAN</a></li>
+									<li><a href="tentang.html"></i>&nbsp;TENTANG</a></li>
+								</ul>
+							</div>
+							<!--/.navbar-collapse-->
+						</div>
+					</nav>
+					<!--/Navigation-->
 
-
-<!--SlideshowBackground-->
-<script>$.vegas('slideshow', {delay:2500,backgrounds:[
-	{src:'images/ramal3.gif', fade:2000 },
-	{src:'images/ramal5.jpeg', fade:1200 },
-	{src:'images/ramal4.jpg', fade:1200 },
-	{src:'images/ramal1.jpg', fade:1200 },
-	{src:'images/style2.png', fade:1200 },]});</script>
-		
-<script type="text/javascript">alert ("Selamat Datang!")</script>		
-<!--jQuery Plugin-->
-<script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-<!--Preloader-->
-<script type="text/javascript">
-$(window).load(function() { $('#status').fadeOut(); 
-$('#preloader').delay(350).fadeOut('slow'); 
-$('body').delay(350).css({'overflow':'visible'});
-})
-</script> 
+				</div>
+				<a href="#" target="_blank" class="navbar-brand"> <img
+						style="position: fixed; bottom: 0; right: 10px; border: 3px dotted green; margin: 290px 0px 1px 1180px;"
+						src="images/google.gif" width="130" height="110">
+			</div>
+		</div>
+	</div>
 </body>
+<!--SlideshowBackground-->
+<script>$.vegas('slideshow', {
+		delay: 2500, backgrounds: [
+			{ src: 'images/ramal3.gif', fade: 2000 },
+			{ src: 'images/ramal5.jpeg', fade: 1200 },
+			{ src: 'images/ramal4.jpg', fade: 1200 },
+			{ src: 'images/ramal1.jpg', fade: 1200 },
+			{ src: 'images/style2.png', fade: 1200 },]
+	});</script>
+
 </html>
